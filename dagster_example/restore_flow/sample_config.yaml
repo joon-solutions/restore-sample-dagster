@@ -7,8 +7,10 @@ ops:
 resources:
   source_db:
     config:
-      host: mySOURCEhost
-      port: mySOURCEport
+      host:
+        env: "MY_TEST_HOST"
+      port:
+        env: "MY_TEST_PORT"
   target_db:
     config:
       host: myTARGEThost
