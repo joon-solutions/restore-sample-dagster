@@ -1,0 +1,15 @@
+ops:
+  copy_db_schema_2:
+    ops:
+      check_params_and_defaults:
+        config:
+          use_db: target_db
+resources:
+  source_db:
+    config:
+      host: mySOURCEhost
+      port: mySOURCEport
+  target_db:
+    config:
+      host: myTARGEThost
+      port: myTARGETport
