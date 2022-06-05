@@ -3,14 +3,12 @@ MY_TEST_HOST=my_env_var_HOST
 MY_TEST_PORT=my_env_var_PORT
 
 2. Clone repo, cd into the folder and run this command in Terminal to create virtual environment, install requirements
-
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
 
 3. Start dagit
-
 dagit -f dagster_example/restore_flow/final_workflow.py
 
 4. Go to Dagster UI
